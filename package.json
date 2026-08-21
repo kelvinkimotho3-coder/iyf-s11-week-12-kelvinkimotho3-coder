@@ -1,0 +1,44 @@
+{
+  "name": "iyf-s11-week-12-kelvinkimotho3-coder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.32.1",
+  "dependencies": {
+    "@tanstack/react-query": "^5.101.4",
+    "@trpc/client": "^11.18.0",
+    "@trpc/react-query": "^11.18.0",
+    "@trpc/server": "^11.18.0",
+    "cookie": "^2.0.1",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.4.2",
+    "drizzle-orm": "^0.45.2",
+    "express": "^5.2.1",
+    "jose": "^6.2.9",
+    "jsonwebtoken": "^9.0.3",
+    "lucide-react": "^1.33.0",
+    "mysql2": "^3.23.4",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "superjson": "^2.2.6",
+    "wouter": "^3.10.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.10",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.2.0",
+    "drizzle-kit": "^0.31.10",
+    "esbuild": "^0.28.2",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.2",
+    "vitest": "^4.1.11"
+  }
+}
