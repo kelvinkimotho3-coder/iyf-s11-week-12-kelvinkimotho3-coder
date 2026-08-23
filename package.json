@@ -1,0 +1,48 @@
+{
+  "name": "iyf-s11-week-12-kelvinkimotho3-coder",
+  "version": "1.0.0",
+  "description": "TechHub collaboration platform backend",
+  "type": "module",
+  "scripts": {
+    "dev": "NODE_ENV=development tsx watch server/_core/index.ts",
+    "build": "vite build && esbuild server/_core/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
+    "start": "NODE_ENV=production node dist/index.js",
+    "check": "tsc --noEmit",
+    "test": "vitest run",
+    "db:push": "drizzle-kit generate && drizzle-kit migrate",
+    "seed": "node scripts/seed.mjs"
+  },
+  "packageManager": "pnpm@10.32.1",
+  "dependencies": {
+    "@tanstack/react-query": "^5.101.4",
+    "@trpc/client": "^11.18.0",
+    "@trpc/react-query": "^11.18.0",
+    "@trpc/server": "^11.18.0",
+    "cookie": "^1.0.2",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.4.2",
+    "drizzle-orm": "^0.45.2",
+    "express": "^5.2.1",
+    "jose": "^6.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "lucide-react": "^1.33.0",
+    "mysql2": "^3.23.3",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "superjson": "^2.2.4",
+    "wouter": "^3.10.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.10",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^26.2.0",
+    "drizzle-kit": "^0.31.10",
+    "esbuild": "^0.27.0",
+    "tsx": "^4.23.12",
+    "typescript": "^5.7.0",
+    "vite": "^8.2.1",
+    "vitest": "^4.1.11"
+  }
+}
